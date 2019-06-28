@@ -31,14 +31,14 @@ public class PersonalDetails implements Serializable {
     private String careerSummary;
 
     @Column(name = "SOFTSKILLS", length = 250)
-    @ElementCollection
+    //@ElementCollection
     private List<String> softSkills;
 
     @OneToMany(mappedBy = "personalDetailsWithSkills", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<TechnicalSkills> technicalSkills;
 
     @Column(name = "CURRENTROLES")
-    @ElementCollection
+    //@ElementCollection
     private List<String> currentRoles;
 
     @OneToMany(mappedBy = "personalDetailsWithWork", cascade = CascadeType.ALL, fetch = FetchType.LAZY)

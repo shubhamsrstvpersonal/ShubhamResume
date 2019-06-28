@@ -28,11 +28,11 @@ public class WorkDetails implements Serializable {
     private String role;
 
     @Column(name = "TOOLS", length = 30)
-    @ElementCollection
+    //@ElementCollection
     private List<String> tools;
 
     @Column(name = "DESCRIPTION", length = 300)
-    @ElementCollection
+    //@ElementCollection
     private List<String> description;
 
     @ManyToOne(fetch = FetchType.LAZY)
