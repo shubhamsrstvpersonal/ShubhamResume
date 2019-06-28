@@ -50,7 +50,7 @@ public class PersonalDetails implements Serializable {
     @Column(name = "SPECIALMESSAGE", length = 2000)
     private String specialMessage;
 
-    @Column(name = "RESUMEFILE", columnDefinition = "MEDIUMBLOB")
+    @Column(name = "RESUMEFILE")
     private byte[] resumeFile;
 
     public String getUsername() {
